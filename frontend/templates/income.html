@@ -1,0 +1,23 @@
+<div class="w-100 d-flex align-self-stretch">
+    <div class="main-content flex-grow-1 m-4 m-md-5 pt-5">
+        <h1 class="fw-bold mb-5">Доходы</h1>
+        <div class="category-items row flex-wrap" id="categories"></div>
+    </div>
+</div>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Вы действительно хотите удалить категорию?
+                    Связанные доходы будут удалены навсегда.</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+            </div>
+            <div class="modal-footer m-auto border-top-0">
+                <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="deleteCategory">Да, удалить</button>
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancelDeleteCategory">Не удалять</button>
+            </div>
+        </div>
+    </div>
+</div>
+

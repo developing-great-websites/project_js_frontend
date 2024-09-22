@@ -1,0 +1,110 @@
+@media screen and (max-width: 1196px) {
+    .divider {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .income,
+    .expenses {
+        margin-bottom: 30px;
+    }
+
+    .period-item {
+        margin-bottom: 10px;
+    }
+
+    .table-adaptive {
+        overflow-x: scroll;
+    }
+
+    .input,
+    .form-select {
+        max-width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .table-responsive {
+        max-width: 500px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .table-responsive {
+        max-width: 450px;
+    }
+}
+
+
+@media screen and (max-width: 769px) {
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        z-index: 1;
+        background-color: white;
+        transition:  left 0.5s ease-in-out;
+    }
+
+    .main-period {
+        margin-bottom: 60px;
+    }
+
+    .table-responsive {
+        max-width: 500px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .income,
+    .expenses {
+        width: 350px;
+        height: 350px;
+    }
+
+    .table-responsive {
+        max-width: 350px;
+    }
+
+    .input,
+    .form-select {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form {
+        width: 350px;
+    }
+
+    .category-item {
+        width: 280px;
+        height: 121px;
+    }
+
+    .income,
+    .expenses {
+        width: 250px;
+        height: 250px;
+    }
+
+    .table-responsive {
+        max-width: 250px;
+    }
+
+}
+
+@media screen and (max-width: 370px) {
+    .form {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 332px) {
+    .main-content-action-create {
+        margin-bottom: 15px;
+    }
+}

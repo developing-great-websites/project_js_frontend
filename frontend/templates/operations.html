@@ -1,0 +1,55 @@
+<div class="w-100 d-flex align-self-stretch">
+    <div class="main-content flex-grow-1 m-4 m-md-5 pt-5">
+        <h2 class="fs-9 fw-bold mb-5">Доходы и расходы</h2>
+        <div class="main-content-action mb-5">
+            <a href="/#/operations/create-operation" class="main-content-action-create btn btn-success" id="createIncome">Создать доход</a>
+            <a href="/#/operations/create-operation" class="btn btn-danger" id="createExpense">Создать расход</a>
+        </div>
+        <div class="period d-flex flex-row flex-wrap align-items-center" id="filter">
+            <button class="period-item btn" id="btnToday">Сегодня</button>
+            <button class="period-item btn" id="btnWeek">Неделя</button>
+            <button class="period-item btn" id="btnMonth">Месяц</button>
+            <button class="period-item btn" id="btnYear">Год</button>
+            <button class="period-item btn" id="btnAll">Все</button>
+            <button class="period-item btn" id="btnInterval">Интервал</button>
+            <div class="period-interval d-flex flex-row align-items-center">
+                <div class="period-interval-start me-2">c</div>
+                <input type="date" class="date border-0 text-secondary" id="dateFrom" disabled placeholder="Дата">
+                <div class="period-interval-end me-2">по</div>
+                <input type="date" class="date border-0 text-secondary" id="dateTo" disabled placeholder="Дата">
+            </div>
+        </div>
+        <div class="table-responsive mt-5">
+            <table class="table text-center border-top">
+                <thead>
+                <tr class="table-header">
+                    <th scope="col">№ операции</th>
+                    <th scope="col">Тип</th>
+                    <th scope="col">Категория</th>
+                    <th scope="col">Сумма</th>
+                    <th scope="col">Дата</th>
+                    <th scope="col">Комментарий</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody id="records"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+         aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Вы действительно хотите удалить операцию?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-footer m-auto">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" id="deleteOperation">Да, удалить</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal" id="cancelDeleteOperation">Не удалять</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
